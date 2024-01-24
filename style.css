@@ -1,0 +1,142 @@
+*{
+    font-family: "ballinger-mono", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+h1{
+    font-size: 100px;
+    margin: 10px;
+}
+
+.grid-wrapper{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    /* justify-content: center; */
+    /* align-items: center;  */
+
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 2fr) 1fr;
+
+    gap:10px;
+}
+
+.grid-item {
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+    /* background-color: #e0b4f2; */
+    /* border: 1px solid #000000; */
+    height: 100%;
+}
+
+/* griddddd parameters */
+.header {
+    grid-column: span 6;
+    grid-row: span 1;
+    align-items: baseline;
+}
+
+.menu {
+    grid-column: span 2;
+    grid-row: span 5;
+}
+
+.img-wrapper{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    overflow-y: auto;
+}
+
+img{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+h3{
+    margin: 0;
+}
+
+h4{
+    margin: 0;
+}
+
+.img-wrapper img{
+    margin-bottom: 10px;
+}
+
+.content{
+    grid-column: span 3;
+    grid-row: span 5;
+}
+
+.content-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    overflow-y: auto;
+    margin-bottom: 3px;
+}
+
+
+
+.ad{
+    grid-column: span 1;
+    grid-row: span 5;
+}
+
+.ad-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    overflow-y: auto;
+}
+
+.ad-wrapper p {
+    font-size: 12px;
+    
+}
+
+footer{
+    grid-column: span 6;
+    grid-row: span 1;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+p {
+    margin: 0;
+}
+
+.content-wrapper p{
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+.content-wrapper h3{
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+
+.ad-wrapper h3{
+    margin-bottom: 8px;
+    text-transform: uppercase;
+
+}
+
+.ad-wrapper p{
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
